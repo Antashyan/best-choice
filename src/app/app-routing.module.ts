@@ -26,6 +26,10 @@ const appRoute: Routes = [
     component: ContactUsComponent
   },
   {
+  path: 'nursery',
+  loadChildren: "./pages/nursery-school/nursery-school/nursery-school.module#NurserySchoolModule"  
+  },
+  {
      path: 'sport',
      loadChildren: "./pages/sport-school/sport-school.module#SportSchoolModule"
    },

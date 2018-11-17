@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -29,7 +30,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     AboutUsComponent,
     ContactUsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+  
   ],
   imports: [
     AppRoutingModule,

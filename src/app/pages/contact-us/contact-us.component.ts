@@ -44,12 +44,12 @@ export class ContactUsComponent implements OnInit {
       this.validateAllFormFields(this.contactUsForm);
     } else {
       console.log(this.contactUsForm.getRawValue());
-      this.contactUsForm.reset();  
+      this.contactUsForm.reset();
     }
   }
 
   public addPhoneControl(): void {
-    const phoneControls = (<FormArray>this.contactUsForm.controls['phones'].controls);
+    const phoneControls = (<FormArray>this.contactUsForm.controls['phones']);
 
     if(phoneControls.length < 4) {
       phoneControls.push(new FormControl('+374'));
